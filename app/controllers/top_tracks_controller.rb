@@ -12,6 +12,8 @@ class TopTracksController < ApplicationController
   # GET /top_tracks/1
   # GET /top_tracks/1.json
   def show
+    @album = RSpotify::Artist.search(@top_track.artist_name).first
+    # puts album
   end
 
   # GET /top_tracks/new

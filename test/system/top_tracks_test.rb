@@ -14,7 +14,7 @@ class TopTracksTest < ApplicationSystemTestCase
     visit top_tracks_url
     click_on "New Top Track"
 
-    fill_in "Album Name", with: @top_track.album_name
+    fill_in "Artist Name", with: @top_track.artist_name
     fill_in "Personal Ranking", with: @top_track.personal_ranking
     fill_in "Track Name", with: @top_track.track_name
     click_on "Create Top track"
